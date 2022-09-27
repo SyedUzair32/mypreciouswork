@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        /* LHS */
+        .main{
+            height: 450px;
+            width: 900px;
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+       }
+       .lhs{
+        height: 450px;
+        width: 450px;
+
+        background-image: linear-gradient(to top left, rgb(199, 8, 81), #071ee9);
+       }
+       .rhs{
+        height: 450px;
+        width: 450px;
+       
+        background-image: linear-gradient(to top right, rgb(245, 193, 250), rgb(122, 116, 194));
+    }
+    .txt{
+        font-weight: bold;
+        text-shadow:black ;
+        width: 300px;
+        font-size: 20px;
+        font-family: sans-serif;
+        color: rgb(255, 208, 0);
+        text-align: center;
+        position: relative;
+        left: 70px;
+        top: 30px;
+    }
+    label{
+        display: block;
+        margin-top: 5px;
+    }
+    input{
+        color: white;
+        background-color: transparent;
+        border:transparent;
+        border-bottom:1px solid rgba(255, 255, 255,0.6);
+        width: 250px;
+    }
+    .form{
+        color: rgb(255, 196, 0);
+        font-size: 16px;
+        font-family: sans-serif;
+    }
+    .name{
+        color: aliceblue;
+        position: relative;
+        top: 40px;
+        left: 60px;  
+    }
+    .email{
+        color: aliceblue;
+        position: relative;
+        top: 70px;
+        left: 60px;
+    }
+    .pass{
+        color: aliceblue;
+        position: relative;
+        top: 100px;
+        left: 60px;
+    }
+    .num{
+        color: aliceblue;
+        position: relative;
+        top: 130px;
+        left: 60px;
+   }
+
+    /* RHS */
+
+    .rhs{
+        color: black;
+        font-family: sans-serif;
+    }
+    .hd{
+        font-weight: bold;
+        margin-top: 46px;
+        text-align: center;
+        font-size: 26px;  
+        word-spacing: 3px;
+        letter-spacing: 0.8px;
+    }
+    .pr{
+        
+        position: relative;
+        top: -20px;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-family: arial; 
+    }
+    .d1{
+        font-size: 14px;
+        position: relative;
+        left: 30px;
+        top: -10px;
+        width: 350px;
+    }
+    .d2{
+        font-size: 14px;
+        position: relative;
+        left: 30px;
+        top: -10px;
+        width: 350px;
+    }
+    .d3{
+        font-size: 14px;
+        position: relative;
+        left: 30px;
+        top: -10px;
+        width: 350px;
+    }
+    .d4{
+        font-size: 14px;
+        position: relative;
+        left: 30px;
+        top: -10px;
+        width: 350px;
+    }
+    a:link{
+        color: rgb(64, 154, 228);
+    }
+    a:visited{
+        color: rgb(92, 7, 7);
+    }
+    a:hover{
+        color: rgb(255, 217, 1);
+    }
+    .im1{
+        position: relative;
+        left: -20px;
+        top: 5px;
+        transition-property: all;
+        transition-timing-function: ease;
+        transition-duration: 0.2s;
+    }
+    .p1{
+        position: relative;
+        left: -10px;
+    }
+    .im1:hover{
+        width: 30px;
+    }
+    .im2{
+        position: relative;
+        left: -20px;
+        top: 5px;
+        transition-property: all;
+        transition-timing-function: ease;
+        transition-duration: 0.2s;
+    }
+    .im2:hover{
+        width: 30px;
+    }
+    .im3{
+        position: relative;
+        left: -20px;
+        top: 5px;
+        transition-property: all;
+        transition-timing-function: ease;
+        transition-duration: 0.2s;
+    }
+    .im3:hover{
+        width: 30px;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        
+        <div class="lhs">
+            <div class="txt"><p>Login your Maverick Account</p></div>
+            <div class="form">
+                <form>
+                    <div class="name">
+                        <label for="">Full Name:</label>
+                        <input type="text">
+                    </div>
+                    <div class="email">
+                        <label for="">Email ID:</label>
+                        <input type="email">
+                    </div>
+                    <div class="pass">
+                        <label for="">Password:</label>
+                        <input type="password">
+                    </div>
+                    <div class="num">
+                        <label for="">Phone Number:</label>
+                        <input type="number">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="rhs">
+            <div class="hd"><p>Let's get in touch with us</p></div>
+            <div class="pr">We're open for any suggestion or to have a chat</div>
+            <div class="d1"><p><b><u>Location</u>:</b>   Maverick International Marketing, Royal Heights| Suite No.9| 2<sup>nd</sup> floor, near Habib Bank, P.E.C.H.S Society, Karachi</p></div>
+            <div class="d2"><p><b><u>Email Address</u>:</b> <u class="u1">
+                <a href="pakwheels.html">workformaverick@protonmail.com</a></u></p></div>
+            <div class="d3"><p><b><u>Website</u></b>:  www.maverickinternational.com </p></div>  
+            <div class="d4"><p><u><b>Others</b></u>: 
+                <p class="p1"><img class="im1" src="/IMG/fb logo.png" height="23px" width="25px">fb_Maverick International Marketing Official</p> 
+                <p class="p1"><img class="im2" src="/IMG/ig logo.jpeg" height="23px" width="25px">ig_Maverick_International_007</p>
+                 <p class="p1"><img class="im3" src="/IMG/dc logo.png" height="23px" width="25px">dc_Maverick International Marketing</p> </p></div>            
+        </div> 
+
+</div> 
+
+</body>
+</html>

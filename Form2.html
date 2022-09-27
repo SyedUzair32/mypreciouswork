@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practise</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        form{
+            border:1px solid red ;
+            height: 600px;
+            width:400px;
+        }
+        legend{
+            font-size: 22px;
+            font-family:serif;
+            text-align: center;
+        }
+        .fm{
+            font-size: 22px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        .f1{
+            font-size: 18px;
+            margin-top: 10px;
+            margin-left: 50px;
+            height: 30px;
+            width: 300px;
+        }
+        .f2{
+            margin-top: 10px;
+            margin-left: 50px;
+        }
+        .sub{
+            margin-left: 300px;
+            font-size: 20px;
+            font-family:arial;
+            font-weight: bold;
+        }
+        input{
+            border: transparent;
+            border-bottom: 2px dashed red;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <form>
+            <legend>Login/Signup</legend><br><br>
+            <label class="fm">Name</label><br>
+            <input class="fm f1" type="text" placeholder="Enter Your Name" required minlength="5" maxlength="30" autofocus><br><br>
+            <label class="fm">Email</label><br>
+            <input class="fm f1" type="email" placeholder="Enter Your Email" required minlength="10"><br><br>
+            <label class="fm">Password</label><br>
+            <input class="fm f1" type="password" placeholder="Enter Your Password" required minlength="4" maxlength="20" ><br><br>
+            <label class="fm">Phone Number</label>
+            <input class="fm f1" type="number" placeholder="Your Phone Number" required>
+            <label class="fm">Gender</label><br>
+            <input class="fm f2" type="radio" name="1">Male      
+            <input class="fm f2" type="radio" name="1">Female <br><br>           
+            <input class="sub" type="submit">
+    </form>
+</div>    
+</body>
+</html>

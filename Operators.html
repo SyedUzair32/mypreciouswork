@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Increment & decrement operator
+    BINARY OPERATOR = 4+4
+    UNINARY OPERATOR = pre operator(++4) post operator (4++) -->
+    <!-- relational operator -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var a= 10;
+        var b= 20;
+        var c="10"
+
+        document.write("pre increment" + " " + a++ );
+        document.write("<br>" + "post increment" + " " + ++a );
+        document.write("<br>" + a);
+        document.write("<br>" + "pre decrement" + " " + a-- );
+        document.write("<br>" + "post decrement" + " " + --a );
+        document.write("<br>" + a);
+
+        document.write("<br>"+"<br>" + "Boolean");
+        document.write("<br>"+ (a>b));
+        document.write("<br>"+ (a<b));
+        document.write("<br>"+ (a==b));
+        document.write("<br>"+ (a===b));
+        document.write("<br>"+ (a===c));
+        document.write("<br>"+ "not equal " + (a!=b));
+        document.write("<br>"+ "b greater than equal to a " + (b>=a));
+        document.write("<br>"+ "a less than equal to b " + (a<=b));
+
+        // Logical Operator
+
+        var name= "John";
+        var age= 22;
+        document.write(name=="John" && age==22 + "<br>");
+        document.write(name=="Ali" && age==22 + "<br>");
+        document.write(name=="Ali" || age==22 + "<br>");
+        document.write(!(name=="jon" || age==2));
+    </script>
+</body>
+</html>

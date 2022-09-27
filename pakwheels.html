@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pak Wheels</title>
+        <style>
+            *{    
+            margin: 0px;
+            padding: 0px;
+        } 
+        .main{
+            background-image: linear-gradient(black 30%,rgb(8, 8, 135),rgb(8, 28, 159));
+            height: 800px;
+            width: 1916px;
+            border: 2px solid black;
+        }
+        ul{
+            margin-top: 30px;
+            position: relative;
+            left: 420px;
+            top: -50px; 
+            display: flex;
+            justify-content: space-evenly;
+            list-style-type: none;
+            font-size: 22px;
+            font-family:Arial;
+            width: 1150px;   
+        }
+        li{
+            height: 45px;
+            align-self: center;
+            margin: 25px;
+            padding-top: 13px;
+            color: white;
+            transition-property: all;
+            transition-timing-function: ease-in;
+            transition-duration: 0.1s;
+        }
+        li:hover{
+            font-size: 22px;
+            background-color: rgb(196, 190, 190);
+            color: rgb(49, 48, 48);
+            font-weight: bold;
+        }
+        .nav2{
+            position: relative;
+            left: 5px; 
+        }
+        .nav3{
+            position: relative;
+            left:10px; 
+        }
+        
+        .top{
+            font-size: 18px;
+            font-family:arial;
+            font-weight: bold;
+            color: white;
+            position: relative;
+            left: 420px;
+            top: 18px; 
+        }
+        .t1{
+            width: 250px;
+            margin-top: -7px;
+            margin-left: -250px; 
+        }
+        .t2{
+
+            height: 15px;
+            width: 10px;
+            border-top: 6px solid red;
+            border-bottom: 6px solid red;
+            border-left: 3px solid red;
+            border-right: 3px solid red;
+            position: relative;
+            left: 145px;
+            top: 33px; 
+        }
+        .t3{
+            width: 150px;
+            font-size: 18px;
+            margin-top: -20px;
+            position: relative;
+            left: 1600px; 
+            height: 25px;
+            transition-property: all;
+            transition-timing-function: ease-in;
+            transition-duration: 0.2s;
+        }
+        .t3:hover{
+            font-size: 21.5px;
+        }
+        .t4{
+            width: 150px;
+            height: 25px;
+            font-size: 18px;
+            margin-top: -25px;
+             position: relative;
+            left: 1700px; 
+            transition-property: all;
+            transition-timing-function: ease-in;
+            transition-duration: 0.2s;
+        }
+        .t4:hover{
+            font-size: 21.5px;
+        }
+        .dv{
+            height: 40px;
+            width:105px;
+            position:relative ;
+            left: 1380px;
+            top:-19px;
+        }
+        .line{
+            position: relative;
+            left:140px;
+            top: 70px;
+            border: 1px solid rgba(63, 61, 105, 0.6);
+            width: 1630px;
+        }
+        .im{
+            width: 200px;
+            position: relative;
+            left: 140px;
+            top: 40px;
+        }
+        .post{
+            height: 23px;
+            width: 170px;
+            border: 1px solid rgb(200,0, 0);
+            background-color: rgb(200, 0, 0);
+            color: white;
+            border-radius: 5px;
+            position: relative;
+            left: 1600px;
+            top: -130px;
+            font-family: arial ;
+            font-weight: bold;
+            font-size:21px ;
+            padding: 7px;
+            text-align: center;
+            transition-property: all;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in;
+        }
+        .post:hover{
+            color:rgb(192, 187, 187);
+            box-shadow: 2px 2px 15px rgb(56, 55, 55);
+            background-color:rgb(200, 0, 0) ;
+            font-size: 23.5px;
+        }
+        .b1{
+             position: relative;
+            left: 550px;
+            top: 60px; 
+            word-spacing: 10px;
+            color: white;
+            text-align: center;
+            padding:50px auto;
+            font-family: arial;
+            height: 100px;
+            width: 800px;    
+            font-size: 50px;
+        }
+        .b2{
+            position: relative;
+            left: 550px;
+            top: 20px;
+            word-spacing: 5px;
+            color: rgba(228, 225, 225, 0.9);
+            text-align: center;
+            padding:50px auto;
+            font-family: arial;
+            height: 100px;
+            width: 800px;    
+            font-size: 25px;
+        }
+        .search{
+            border: 1px solid transparent;
+            background-color: rgb(220, 238, 250);
+            height: 35px;
+            width: 1100px;
+            position: relative;
+            left: 400px;
+            padding: 8px;
+            padding-left: 10px;
+            font-size: 25px;
+        }
+        .p1{
+            width: 200px;
+            color: black;
+            padding: 8px;
+            padding-left: 10px;
+            font-size: 25px;
+            position: relative;
+            left: 500px;
+            top: -37px;
+        }
+        .p2{
+            width: 200px;
+            color: black;
+            padding: 8px;
+            padding-left: 10px;
+            font-size: 25px;
+            position: relative;
+            left: 820px;
+            top: -81px;
+        }
+        .p3{
+            background-color: rgb(10, 126, 6);
+            height: 55px;
+            width: 65px;
+            position: relative;
+            left: 1045px;
+            top: -127px;
+        }
+        .p3:hover{
+        
+            box-shadow: 3px 3px 10px rgb(219, 250, 213) ;
+        }
+        .im2{
+            position: relative;
+            left: 1057px;
+            top: -170px;
+        }
+        </style>
+</head>
+<body>
+    <div class="main">
+    <div class="main2">
+        <div class="line"></div>
+        <div class="topbar">
+            <div class="top t2"></div>
+            <div class="top t1">Download App Via SMS</div>
+            <div class="top t3">Sign Up</div>
+            <div class="top t4">Sign In</div>
+            <div class="dv"></div>
+
+        </div>
+        <div  class="im"><img src="/IMG/PAKWHEEL LOGO.png" height="60px" width="230px" alt="">
+        </div>
+        <ul>
+            <li class="nav1"><p>Used Cars</p></li>
+            <li class="nav2"><p>New Cars</p></li>
+            <li class="nav3"><p>Bikes</p></li>
+            <li class="nav4"><p>Auto Store</p></li>
+            <li class="nav5"><p>Videos</p></li>
+            <li class="nav6"><p>Forums</p></li>
+            <li class="nav7"><p>Blog</p></li>
+            <li class="nav8"><p>More</p></li>
+        </ul>
+    </div>
+    
+    <div class="post">Post an Ad</div>
+    <div class="b1">Find Used Cars in Pakistan</div>
+    <div class="b2">with thousand of car, we have just the right one for you</div>
+    <div class="search">Car Make or Model<p class="p1">All Cities</p><p class="p2">Price range</p><p class="p3"></p><img class="im2" src="/IMG/download.png" height="30px" width="35px" alt=""><div>
+    
+    </div>
+</body>
+</html>

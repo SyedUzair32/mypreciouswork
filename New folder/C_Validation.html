@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+<body>
+    
+    <label>Name</label>
+    <input type="text" id="nme">
+    <br>
+    <span id="s_n"></span>
+    <br><br>
+    <label>Email</label>
+    <input type="text" id="eml">
+    <br>
+    <span id="s_e"></span>
+    <br><br>
+    <button type="button" onclick="func()">Login</button>
+    <br><br>
+    <div id="print"></div>
+
+    <script>
+
+        function func(){
+            var name = document.getElementById("nme").value;
+            var email = document.getElementById("eml").value;
+
+            if( name=="Ahad" && email=="syedahad@gmail.com"){
+                document.getElementById("print").innerHTML = "Welcome" + " " + name;
+                document.getElementById("s_e").innerHTML= " ";  
+                document.getElementById("s_n").innerHTML = " ";  
+            }
+            else if(name=="Ahad" && email!="syedahad@gmail.com"){
+                document.getElementById("s_e").innerHTML= "Invalid Email Address";    
+                document.getElementById("s_n").innerHTML = " ";  
+                document.getElementById("print").innerHTML = " " ;     
+            }  
+            else if(name!="Ahad" && email=="syedahad@gmail.com"){
+                document.getElementById("s_n").innerHTML = "Incorrect User Name"; 
+                document.getElementById("s_e").innerHTML= " "; 
+                document.getElementById("print").innerHTML = " " ;     
+            }
+            else if(name!="Ahad" && email!="syedahad@gmail.com"){
+                document.getElementById("s_e").innerHTML= "Invalid Email Address";
+                document.getElementById("s_n").innerHTML = "Incorrect User Name";   
+                document.getElementById("print").innerHTML = " " ;       
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .main{
+            border: 1px solid rgba(232, 209, 209, 0);
+            height: 800px;
+            width: auto;
+        }
+        .cal{
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            height: 650px;
+            width: 600px;
+            margin: 50px auto;
+            font-size: 30px;
+        }
+        button{
+            height: 100px;
+            width: 90px;
+            display: inline;
+            font-size: 25px;
+            font-weight: bold;
+            position: relative;
+            left: 20px;            
+        }
+        table{
+            margin: 0px auto;
+            width: auto;
+        }
+        input{
+            height: 100px;
+            width: 580px;
+            font-size: 50px;
+            padding-left: 10px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="cal">
+            <table border="1">
+             <tr>
+                <td colspan="4"> <input type="text" id="inp"></td>
+             </tr>
+             <tr>
+                <td><button onclick="num(7)">7</button></td>
+                <td><button onclick="num(8)">8</button></td>
+                <td><button onclick="num(9)">9</button></td>
+                <td><button onclick="opr('÷')">÷</button></td>
+             </tr>
+             <tr>
+                <td><button onclick="num(4)">4</button></td>
+                <td><button onclick="num(5)">5</button></td>
+                <td><button onclick="num(6)">6</button></td>
+                <td><button onclick="opr('*')">*</button></td>
+             </tr>
+             <tr>
+                <td><button onclick="num(1)">1</button></td>
+                <td><button onclick="num(2)">2</button></td>
+                <td><button onclick="num(3)">3</button></td>
+                <td><button onclick="opr('+')">+</button></td>
+             </tr>
+             <tr>
+                <td><button onclick="num(0)">0</button></td>
+                <td><button onclick="num('.')">.</button></td>
+                <td><button onclick="clr()">AC</button></td>
+                <td><button onclick="opr('/')">-</button></td>
+             </tr>
+             <tr>
+                <td><button>√</button></td>
+                <td><button>²</button></td>
+                <td><button onclick="dele()">Del</button></td>
+                <td><button onclick="res()">=</button></td>
+             </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <script>
+
+        function num(a){
+            var i = document.getElementById("inp").value += a;
+        }
+        function opr(o){
+            var opp = document.getElementById("inp").value += o;
+        }
+        function clr(){
+            var cl = document.getElementById("inp").value = " ";
+        }
+        function dele(){
+            var d = document.getElementById("inp").value;
+            document.getElementById("inp").value  = d.substr(0,d.length-1);
+        }
+        function res(){
+            var r = eval(document.getElementById("inp").value);
+            documnet.getElementById("inp").value = r;
+        }
+
+    </script>
+</body>
+</html>

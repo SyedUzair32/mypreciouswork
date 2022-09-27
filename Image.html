@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Box</title>
+    <style>
+        .mainn{
+            height: 900px;
+            width: auto;
+            
+            display: flex;
+        }
+        .main{
+            border: 2px solid black;
+            height: 850px;
+            width:900px;
+            margin: 30px auto;
+        }
+        .cont{
+         
+            height: 600px;
+            width:800px;
+            margin: 10px auto;
+        }
+        .cont img{
+            margin-left:50px;
+        }
+        .lower{
+          
+            height: 200px;
+            width: 890px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .low{
+            border: 2px solid rgb(0, 0, 0);
+            height: 180px;
+            width: 200px;
+            margin: 10px ;
+        }
+        .main1{
+            height: 850px;
+            width: 800px;
+            margin:30px auto;
+            font-size: 25px;
+            font-family: sans-serif;
+            text-align: justify;
+        }
+        #dec2{
+            display: none;
+        }
+        #dec3{
+            display: none;
+        }
+        #dec4{
+            display: none;
+        }
+        #des{
+            margin: 10px auto;
+        }
+        #des h1{
+            margin-left: 23px;
+            font-size: 50px;
+        }
+        #des p{
+            width: 750px;
+            margin: 0px auto;
+        }
+        #des span{
+            color: red;
+            font-weight: bold;
+            font-size: 35px;
+            position: relative;
+            top: 20px;
+            margin-left: 23px;
+        }
+        #des h2{
+            height: 55px;
+            width: 220px;
+            text-align: center;
+            padding-top: 10px;
+            background-color: maroon;
+            color: aliceblue;
+            border-radius: 8px;
+            position: relative;
+            top: 20px;
+            left: 140px;
+        }
+        #des input{
+            height: 50px;
+            width: 80px;
+            position: relative;
+            top: 110px;
+            left: -160px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+                                         <!-- IMAGES -->
+    <div class="mainn">
+    <div class="main">
+        <div class="cont">
+            <img src="/New folder/img.jpg" height="600px" width="700px" id="im">
+        </div>
+        <div class="lower">
+            <div class="low a1">
+                <img src="/New folder/img.jpg" onclick="imag(this.src)" height="180px" width="200px" alt="">
+            </div>
+            <div class="low b1"> 
+                <img src="/New folder/muneeb12345.jpg"  onclick="ige(this.src)" height="180px" width="200px" alt="">
+            </div>
+            <div class="low c1">
+                <img src="/New folder/oud-for-you-edp-perfume-spray-100ml-[2]-11188-p.jpg" onclick="ime(this.src)"  height="180px" width="200px" alt="">
+            </div>
+            <div class="low d1">
+                <img src="/New folder/arabian-knight-1.jpg" onclick="ieg(this.src)"  height="180px" width="180px" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- DESCRIPTION -->
+     
+    <div class="main1"  id="dec1">
+        <div id="des">
+            <h1>Dolce and Gabana</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis optio, omnis modi, repellendus dolore minima quia vitae debitis, voluptatibus reiciendis corporis recusandae esse facilis quod fugit beatae. Quis, cumque. Non?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptatem a exercitationem cum qui ex, unde mollitia alias est veritatis minus recusandae architecto dolores accusamus quod soluta iste sapiente nam.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam accusantium ad hic fugit molestias excepturi deleniti. Assumenda a non, beatae deserunt eveniet, laborum quod cum incidunt sit ipsum totam doloribus?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <span> Rs. 1,850</span>
+            <input type="number">
+            <h2>Add to Cart</h2>
+        </div>
+    </div>  
+    
+    
+    <div class="main1"  id="dec2">
+        <div id="des">
+            <h1>Muneeb Kohasaa</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis optio, omnis modi, repellendus dolore minima quia vitae debitis, voluptatibus reiciendis corporis recusandae esse facilis quod fugit beatae. Quis, cumque. Non?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptatem a exercitationem cum qui ex, unde mollitia alias est veritatis minus recusandae architecto dolores accusamus quod soluta iste sapiente nam.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam accusantium ad hic fugit molestias excepturi deleniti. Assumenda a non, beatae deserunt eveniet, laborum quod cum incidunt sit ipsum totam doloribus?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <span> Rs. 2,250</span>
+            <input type="number">
+            <h2>Add to Cart</h2>
+        </div>
+    </div>  
+
+    <div class="main1" id="dec3">
+        <div id="des">
+            <h1>Oudhi</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis optio, omnis modi, repellendus dolore minima quia vitae debitis, voluptatibus reiciendis corporis recusandae esse facilis quod fugit beatae. Quis, cumque. Non?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptatem a exercitationem cum qui ex, unde mollitia alias est veritatis minus recusandae architecto dolores accusamus quod soluta iste sapiente nam.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam accusantium ad hic fugit molestias excepturi deleniti. Assumenda a non, beatae deserunt eveniet, laborum quod cum incidunt sit ipsum totam doloribus?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <span> Rs. 5,800</span>
+            <input type="number">
+            <h2>Add to Cart</h2>
+        </div>
+    </div>  
+
+    <div class="main1" id="dec4">
+        <div id="des">
+            <h1>Arabian Knight</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis optio, omnis modi, repellendus dolore minima quia vitae debitis, voluptatibus reiciendis corporis recusandae esse facilis quod fugit beatae. Quis, cumque. Non?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident voluptatem a exercitationem cum qui ex, unde mollitia alias est veritatis minus recusandae architecto dolores accusamus quod soluta iste sapiente nam.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam accusantium ad hic fugit molestias excepturi deleniti. Assumenda a non, beatae deserunt eveniet, laborum quod cum incidunt sit ipsum totam doloribus?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <span> Rs. 2,850</span>
+            <input type="number">
+            <h2>Add to Cart</h2>
+        </div>
+    </div>  
+
+    </div>
+    <script>
+      
+      function imag(i){
+        document.getElementById("im").src=i;
+        document.getElementById("dec1").style.display='block';
+        document.getElementById("dec2").style.display='none';
+        document.getElementById("dec3").style.display='none';
+        document.getElementById("dec4").style.display='none';
+      }
+      function ige(i){
+        document.getElementById("im").src=i;
+        document.getElementById("dec2").style.display='block';
+        document.getElementById("dec1").style.display='none';
+        document.getElementById("dec3").style.display='none';
+        document.getElementById("dec4").style.display='none';
+      }
+
+      function ime(i){
+        document.getElementById("im").src=i;
+        document.getElementById("dec3").style.display='block';
+        document.getElementById("dec1").style.display='none';
+        document.getElementById("dec2").style.display='none';
+        document.getElementById("dec4").style.display='none';
+      }
+      function ieg(i){
+        document.getElementById("im").src=i;
+        document.getElementById("dec2").style.display='none';
+        document.getElementById("dec1").style.display='none';
+        document.getElementById("dec3").style.display='none';
+        document.getElementById("dec4").style.display='block';
+      }
+    </script>
+</body>
+</html>

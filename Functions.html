@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    
+    <label for="">Enter Any Number</label>
+    <input type="number" id="dmas1" placeholder="enter 1st number">
+    <input type="number" id="dmas2" placeholder="enter 2nd number">
+
+    <button id="addi" type="submit" onclick="ad()">Add</button>
+    <button id="subt" type="submit" onclick="sb()">Sub</button>
+    <button id="divi" type="submit" onclick="dd()">Div</button>
+    <button id="multi" type="submit" onclick="ml()">Mult</button>
+    
+    <div id="print"></div>
+
+    <Script>
+
+        function ad(){
+            var pl1=  parseInt(document.getElementById("dmas1").value);
+            var pl2=  parseInt(document.getElementById("dmas2").value);
+            var fun= pl1+pl2;
+            document.getElementById("print").innerHTML=fun;
+        }
+        function sb(){
+            var sl= document.getElementById("dmas1").value;
+            var s2= document.getElementById("dmas2").value;
+            var fun= sl-s2;
+            document.getElementById("print").innerHTML=fun;
+        }
+        function dd(){
+            var dv1= document.getElementById("dmas1").value;
+            var dv2= document.getElementById("dmas2").value;
+            var fun= dv1/dv2;
+            document.getElementById("print").innerHTML=fun;
+        }
+        function ml(){
+            var mt1= document.getElementById("dmas1").value;
+            var mt2= document.getElementById("dmas2").value;
+            var fun = mt1*mt2;
+            document.getElementById("print").innerHTML= fun;
+        }
+    </Script>
+</body>
+</html>
